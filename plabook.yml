@@ -1,0 +1,8 @@
+--- #playbook.yml
+- hosts: all
+  user: ansible
+  connection: ssh
+  become: yes
+tasks:
+    - name: install apache
+      action: yum pkg=httpd
