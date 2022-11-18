@@ -6,4 +6,4 @@
 
   tasks:
     - name: install apache
-      action: yum pkg=httpd
+      action: yum pkg=httpd state=absent
