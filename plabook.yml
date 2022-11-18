@@ -6,4 +6,8 @@
 
   tasks:
     - name: install apache
-      action: yum pkg=httpd state=absent
+      action: yum pkg=httpd state=present
+    - name: index-deploy
+      action: copy src=index.html dest=/var/www/html
+    - name: service start
+      command: service httpd start
