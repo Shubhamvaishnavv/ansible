@@ -3,6 +3,7 @@
   user: ansible
   connection: ssh
   become: yes
-tasks:
+
+  tasks:
     - name: install apache
       action: yum pkg=httpd
